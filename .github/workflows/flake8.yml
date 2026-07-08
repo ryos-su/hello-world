@@ -27,7 +27,7 @@ jobs:
       run: |
         flake8 .  > flake8_report.txt || true
 
-    - name: Upload flake8 flake8_report
+    - name: Upload flake8 report
       uses: actions/upload-artifact@v4
       with:
         name: flake8-report
